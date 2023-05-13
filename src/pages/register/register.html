@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="../../css/globalStyle.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../login/login.css">
+    <script type="module" src="../../script/register.js" defer></script>
+    <title>Register</title>
+</head>
+<body>
+    <header class="container__header">
+        <div class="container__header-all">
+            <div class="header__logo">
+                <img src="../../assets/images/Ellipse 1 (1).jpg" alt="bola azul" class="header__img">
+                <img src="../../assets/images/Kenzie Empresas (1).png" alt="logotipo Kenzie">
+            </div>
+            <div class="header__buttons">
+                <button id="back__home" class="header__login button__header home__back">Home</button>
+                <button id="back__login" class="header__cadastro button__header">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container__main-login">
+            <div class="login__container-all">
+                <div class="login__container-text">
+                    <h1 class="login__title">Cadastre-se</h1>
+                </div>
+                <div class="login__container-input">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Seu nome">
+                    <label for="email" class="login__label-email"></label>
+                    <input type="email" name="email" id="input__email" placeholder="Seu e-mail">
+                    <label for="password" class="login__label-password"></label>
+                    <input type="password" name="password" id="input__password" placeholder="Sua senha">
+                </div>
+                <div class="login__container-buttons">
+                    <button id="cadastrar" class="login__button login__button--cadastrar">Cadastrar</button>
+                    <button class="login__button login__button--retornar home__back">Retornar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="toast__container">
+        <div class="toast__success hide" id="toast--success">
+            <div class="toast__div">
+                <strong>Sucess</strong>
+                <img src="../../assets/images/sucess.png" alt="imagem bem sucedido">
+            </div>
+        </div>
+        
+        
+        <div class="toast__error hide" id="toast--error">
+            <div class="toast__div">
+                <strong>Error</strong>
+                <img src="../../assets/images/erro.png" alt="imagem erro">
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

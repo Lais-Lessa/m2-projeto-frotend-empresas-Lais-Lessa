@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/globalStyle.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../admin/admin.css">
+    <script type="module" src="../../script/adm.js" defer></script>
+
+    <title>Admin</title>
+</head>
+
+<body>
+    <header class="container__header">
+        <div class="container__header-all">
+            <div class="header__logo">
+                <img src="../../assets/images/Ellipse 1 (1).jpg" alt="bola azul" class="header__img">
+                <img src="../../assets/images/Kenzie Empresas (1).png" alt="logotipo Kenzie">
+            </div>
+            <div class="header__buttons">
+                <button id="logout__adm" class="header__login button__header">Logout</button>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container__all">
+
+        <div class="container__select">
+            <select name="empresas" id="empresas" class="empresas__selected" >
+                <option value="0" class="option__select" selected> Selecionar Empresas </option>
+            </select>
+        </div>
+
+
+        <div class="container__text-button">
+            <h2 class="departamentos__title">Departamentos</h2>
+            <button id="button--criar" class="button_criar">+ Criar</button>
+        </div>
+
+
+        <ul class="container__departamento">
+            <li class="departamento__left">
+                <div class="container__text">
+                </div>
+                <div class="icons">
+                </div>
+            </li>
+        </ul>
+
+        <div class="container__text-button">
+            <h2 class="departamentos__title" >Usuários cadastrados</h2>
+        </div>
+
+        <div class="usuarios__cadastrados">
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="toast__container">
+        <div class="toast__success hide" id="toast--success">
+            <div class="toast__div">
+                <strong>Sucess</strong>
+                <img src="../../assets/images/sucess.png" alt="imagem bem sucedido">
+            </div>
+        </div>
+        
+        
+        <div class="toast__error hide" id="toast--error">
+            <div class="toast__div">
+                <strong>Error</strong>
+                <img src="../../assets/images/erro.png" alt="imagem erro">
+            </div>
+        </div>
+    </div>    
+
+
+    <dialog class="dialog">
+        <div class="container__dialog">
+            <p class="close">X</p>
+            <h1 class="title__dialog">Nome do departamento</h1>
+            <p class="text__dialog">Descrição do departamento</p>
+            <span class="span__dialog">Empresa pertencente</span>
+            <div class="select__dialog--container">
+                <select name="" id="" class="select__dialog">
+                <option class="option__dialog" value="0">Selecionar Usuário</option>                
+                </select>
+                <button class="btn__select">Contratar</button>
+            </div>
+            <div class="dialog__render--usuarios">
+                <div class="container__usuarios">
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+
+
+    <dialog id="department" class="department">
+        <div class="div__department">
+            <p class="close__depart" id="close__departmet--dialog">X</p>
+            <h2 class="title__dialog title__departamento"> Criar Departamento</h1>
+            <input type="text" class="departamento__name" placeholder="Nome do departamento">
+            <input type="text" class="departamento__description" placeholder="Descrição">
+            <select name="select__departament" id="select__departamente" class="select__departament" >
+                <option value="0" class="option__departament"> Selecionar empresa</option>
+            </select>
+            <button class="btn__departament">Criar</button>
+        </div>
+    </dialog>
+
+
+
+    <dialog id="edit__departament" class="edit__departament">
+        <div class="div__edit--departament">
+            <p class="department__close">X</p>
+            <h2 class="title__dialog title__edit"> Editar Departamento</h1>
+                <textarea name="edit" id="edit" cols="30" rows="10" class="textarea__edit--departamet" placeholder="Valores anteriores da descrição"></textarea>
+                <button class="btn__edit">Salvar</button>
+            </div>
+    </dialog>
+
+
+    <dialog class="delete">
+        <p class="modal__close--delete">X</p>
+        <div class="div__delete">
+            <p class="text__delete">Realmente deseja remover o Departamento NOME e demitir seus funcionários?</p>
+            <button class="btn__delete">Remover</button>
+        </div>
+    </dialog>
+
+
+    <dialog class="edit__usuario">
+        <div class="div__edit--usuario">
+            <p id="close--delete" class="close--delete">X</p>
+            <h2 class="title__dialog--edit"> Editar Usuário</h1>
+                <input type="text" class="edit__usuario--name" placeholder="Nome">
+                <input type="email" class="edit__usuario--email" placeholder="E-mail">
+                <button class="btn__edit--usuario">Salvar</button>
+        </div>
+    </dialog>
+
+
+
+    <dialog class="delete__usuario">
+        <div class="div__delete--usuario">
+            <p class="close__delete--usuario">X</p>
+            <p class="text__delete">Realmente deseja remover o usuário NOME?</p>
+            <button class="btn__edit--delet">Remover</button>
+        </div>
+    </dialog>
+</body>
+
+</html>
